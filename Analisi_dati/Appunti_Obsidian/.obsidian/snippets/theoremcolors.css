@@ -1,0 +1,63 @@
+/* --- Academic Theorem Callouts --- */
+
+/* Base styling for all math callouts */
+.callout[data-callout-attributor] {
+    --callout-border-width: 2px;
+    --callout-border-opacity: 0.8;
+    border-radius: 4px;
+    font-family: "Latin Modern Roman", "CMU Serif", serif; /* Classic LaTeX font if installed */
+}
+
+/* 1. THEOREMS - Deep Blue */
+.callout[data-callout="theorem"], 
+.callout[data-callout="thm"] {
+    --callout-color: 0, 102, 204;
+    --callout-icon: sigma;
+    background-color: rgba(0, 102, 204, 0.05);
+    border-left: 5px solid rgb(0, 102, 204);
+}
+
+/* 2. LEMMAS - Emerald Green */
+.callout[data-callout="lemma"], 
+.callout[data-callout="lem"] {
+    --callout-color: 16, 124, 65;
+    --callout-icon: double-check;
+    background-color: rgba(16, 124, 65, 0.05);
+    border-left: 5px solid rgb(16, 124, 65);
+}
+
+/* 3. COROLLARIES - Royal Purple */
+.callout[data-callout="corollary"], 
+.callout[data-callout="cor"] {
+    --callout-color: 128, 0, 128;
+    --callout-icon: layers;
+    background-color: rgba(128, 0, 128, 0.05);
+    border-left: 5px solid rgb(128, 0, 128);
+}
+
+/* 4. DEFINITIONS - Burnt Orange/Gold */
+.callout[data-callout="definition"], 
+.callout[data-callout="def"] {
+    --callout-color: 184, 134, 11;
+    --callout-icon: book-type;
+    background-color: rgba(184, 134, 11, 0.05);
+    border-left: 5px solid rgb(184, 134, 11);
+}
+
+/* Callout per Moment Generating Function (Standard) - VIOLA */
+.callout[data-callout="mgf"] {
+    --callout-color: 155, 89, 182; /* Viola moderno */
+    --callout-icon: sigma;
+}
+
+/* Callout per Central Moment Generating Function - VERDE */
+.callout[data-callout="central-mgf"] {
+    --callout-color: 39, 174, 96; /* Verde smeraldo */
+    --callout-icon: target;
+}
+
+/* Rende il bordo un po' più evidente per distinguere le funzioni */
+.callout[data-callout="mgf"], 
+.callout[data-callout="central-mgf"] {
+    border-left: 5px solid rgba(var(--callout-color), 1);
+}

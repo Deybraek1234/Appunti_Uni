@@ -1,0 +1,56 @@
+{
+  "dualConfigs": false,
+  "showConsoleLog": false,
+  "desktop": {
+    "shortDelaySeconds": 5,
+    "longDelaySeconds": 15,
+    "delayBetweenPlugins": 40,
+    "defaultStartupType": null,
+    "showDescriptions": true,
+    "enableDependencies": false,
+    "plugins": {
+      "table-editor-obsidian": {
+        "startupType": "instant"
+      },
+      "obsidian42-brat": {
+        "startupType": "instant"
+      },
+      "colored-text": {
+        "startupType": "instant"
+      },
+      "dataview": {
+        "startupType": "instant"
+      },
+      "obsidian-latex-suite": {
+        "startupType": "instant"
+      },
+      "math-booster": {
+        "startupType": "long"
+      },
+      "obsidian-linter": {
+        "startupType": "instant"
+      },
+      "mathlinks": {
+        "startupType": "instant"
+      },
+      "obsidian-pandoc": {
+        "startupType": "instant"
+      },
+      "obsidian-livesync": {
+        "startupType": "disabled"
+      },
+      "various-complements": {
+        "startupType": "instant"
+      },
+      "obsidian-vimrc-support": {
+        "startupType": "instant"
+      },
+      "pandoc-extended-markdown": {
+        "startupType": "instant"
+      },
+      "obsidian-pandoc-reference-list": {
+        "startupType": "disabled"
+      }
+    }
+  }
+}

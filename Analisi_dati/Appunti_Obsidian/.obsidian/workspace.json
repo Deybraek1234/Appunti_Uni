@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "31351b3fe1a426ac",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1bd3322dbe60c09",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a8301d054065904",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brutta Copia/1. Momenti.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1. Momenti"
+            }
+          },
+          {
+            "id": "e34700ada7ce4a17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brutta Copia/2. Distribuzioni di Probabilità.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2. Distribuzioni di Probabilità"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "5a28aacf2155d932",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c89f678a93ac909",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. Distribuzioni di Probabilità.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2. Distribuzioni di Probabilità"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "06af53f71e838ab3",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b168de77055c342",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e498b94e991e2dca",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "bbc23e210c26852b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3508ba37e6a4b96e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 211.5
+  },
+  "right": {
+    "id": "4f4b21d1f2825abd",
+    "type": "split",
+    "children": [
+      {
+        "id": "fec5276bc18518d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15f78d730c9faf5f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "cefd4b5218efd2ad",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "53c6e37d04169824",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5f95bd8182edaf7c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian42-brat:BRAT": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "pandoc-extended-markdown:Open list panel": false
+    }
+  },
+  "active": "1c89f678a93ac909",
+  "lastOpenFiles": [
+    "1. Momenti.md",
+    "2. Distribuzioni di Probabilità.md",
+    "Brutta Copia/2. Distribuzioni di Probabilità.md",
+    "Brutta Copia/1. Momenti.md",
+    "Python Syntax.md",
+    "Note Organizzative.md",
+    "te.md",
+    "Brutta Copia",
+    "Appunti"
+  ]
+}
