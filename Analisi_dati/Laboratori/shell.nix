@@ -9,6 +9,8 @@ pkgs.mkShell {
       numpy
       pandas
       scipy
+      mathplotlib
+      
 
       jupyterlab
       ipython

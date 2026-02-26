@@ -9,9 +9,8 @@
   "colored-text",
   "obsidian-excalidraw-plugin",
   "table-editor-obsidian",
-  "obsidian-vimrc-support",
   "obsidian42-brat",
   "mathlinks",
-  "lazy-plugins",
-  "pandoc-extended-markdown"
+  "pandoc-extended-markdown",
+  "code-styler"
 ]

@@ -1,0 +1,273 @@
+{
+  "main": {
+    "id": "31351b3fe1a426ac",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a28aacf2155d932",
+        "type": "tabs",
+        "dimension": 41.60427807486631,
+        "children": [
+          {
+            "id": "1c89f678a93ac909",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. Sistemi 1D.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2. Sistemi 1D"
+            }
+          }
+        ]
+      },
+      {
+        "id": "0b12279b298672af",
+        "type": "split",
+        "dimension": 58.39572192513369,
+        "children": [
+          {
+            "id": "8124164fa31c2992",
+            "type": "tabs",
+            "dimension": 46.18249534450652,
+            "children": [
+              {
+                "id": "cfb0011dcd475fd2",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Appunti Prof/SIstemi Dinamici unidim.pdf",
+                    "page": 4,
+                    "left": -13,
+                    "top": 836,
+                    "zoom": 1.1539429530201342
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "SIstemi Dinamici unidim"
+                }
+              }
+            ]
+          },
+          {
+            "id": "fe5855e81448741b",
+            "type": "tabs",
+            "dimension": 53.81750465549349,
+            "children": [
+              {
+                "id": "3e6ae11d921f7507",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
+                    "page": 28,
+                    "left": 591,
+                    "top": 227,
+                    "zoom": 1.31
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "S. H. Strogatz - Nonlinear dynamics and chaos"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "06af53f71e838ab3",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b168de77055c342",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e498b94e991e2dca",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "bbc23e210c26852b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3508ba37e6a4b96e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 211.5
+  },
+  "right": {
+    "id": "4f4b21d1f2825abd",
+    "type": "split",
+    "children": [
+      {
+        "id": "fec5276bc18518d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15f78d730c9faf5f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "cefd4b5218efd2ad",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "53c6e37d04169824",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5f95bd8182edaf7c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "efc1642cf7fc848a",
+            "type": "leaf",
+            "state": {
+              "type": "list-panel-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "list-panel-view"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian42-brat:BRAT": false,
+      "pandoc-extended-markdown:Open list panel": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
+    }
+  },
+  "active": "1c89f678a93ac909",
+  "lastOpenFiles": [
+    "1. Analisi Qualitativa.md",
+    "2. Sistemi 1D.md",
+    "Appunti Prof/SIstemi Dinamici unidim.pdf",
+    "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
+    "Appunti Prof/Sistemi Dinamici Discreti.pdf",
+    "Appunti Prof/SD unidim.pdf",
+    "Appunti Prof/Sistemi Dinamici Non Lineari.pdf",
+    "Appunti Prof/Sistemi Dinamici Planari.pdf",
+    "Appunti Prof/Sistemi Dinamici e Caos.pdf",
+    "Appunti Prof/Sistemi Dinamici Lineari.pdf",
+    "Appunti Prof/IFT 30 - Eq di HJ, sistemi integrabili.pdf",
+    "Images/Pasted image 20260225150433.png",
+    "Images/Pasted image 20260225145948.png",
+    "Images/Pasted image 20260225144128.png",
+    "Images/Pasted image 20260225144049.png",
+    "Appunti Prof",
+    "Images/Pasted image 20260225140722.png",
+    "Pasted image 20260225140722.png",
+    "Images/Pasted image 20260224194747.png",
+    "Images/Pasted image 20260224194838.png",
+    "Images/Pasted image 20260224191511.png",
+    "Images/Pasted image 20260224191729.png",
+    "1. Momenti.md",
+    "2. Distribuzioni di Probabilità.md",
+    "Brutta Copia/2. Distribuzioni di Probabilità.md",
+    "Brutta Copia/1. Momenti.md",
+    "Python Syntax.md",
+    "Note Organizzative.md",
+    "te.md"
+  ]
+}
