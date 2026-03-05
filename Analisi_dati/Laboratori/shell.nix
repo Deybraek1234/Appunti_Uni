@@ -9,8 +9,7 @@ pkgs.mkShell {
       numpy
       pandas
       scipy
-      mathplotlib
-      
+      matplotlib 
 
       jupyterlab
       ipython
@@ -18,7 +17,7 @@ pkgs.mkShell {
       black
       ruff
       debugpy
-    ]))
+    ]))];
 
   # for C code
   #for libraries

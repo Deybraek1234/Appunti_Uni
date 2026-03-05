@@ -4,12 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "5a28aacf2155d932",
+        "id": "fe5855e81448741b",
         "type": "tabs",
-        "dimension": 41.60427807486631,
+        "dimension": 41.12299465240642,
         "children": [
           {
-            "id": "1c89f678a93ac909",
+            "id": "3e6ae11d921f7507",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3. Trattazione Matematica (si può saltare).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. Trattazione Matematica (si può saltare)"
+            }
+          },
+          {
+            "id": "614a675451fdbc92",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,42 +35,44 @@
               "icon": "lucide-file",
               "title": "2. Sistemi 1D"
             }
-          },
-          {
-            "id": "1f5f13f3cc3e9de2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti extra.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Appunti extra"
-            }
           }
         ]
       },
       {
-        "id": "fe5855e81448741b",
+        "id": "6e609233b8dad9cc",
         "type": "tabs",
-        "dimension": 58.39572192513369,
+        "dimension": 58.87700534759358,
         "children": [
           {
-            "id": "3e6ae11d921f7507",
+            "id": "eef018005a8a1c89",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
                 "file": "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
-                "page": 43,
-                "left": 492,
-                "top": 383,
-                "zoom": 1.75
+                "page": 80,
+                "left": 397,
+                "top": -3,
+                "zoom": 0.9
               },
               "icon": "lucide-file-text",
               "title": "S. H. Strogatz - Nonlinear dynamics and chaos"
+            }
+          },
+          {
+            "id": "f6d4da481c3a19f1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Appunti Prof/Sistemi Dinamici Lineari.pdf",
+                "page": 2,
+                "left": -11,
+                "top": 709,
+                "zoom": 1.3200503355704698
+              },
+              "icon": "lucide-file-text",
+              "title": "Sistemi Dinamici Lineari"
             }
           }
         ]
@@ -116,8 +132,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211.5,
-    "collapsed": true
+    "width": 211.5
   },
   "right": {
     "id": "4f4b21d1f2825abd",
@@ -222,30 +237,30 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "1c89f678a93ac909",
+  "active": "3e6ae11d921f7507",
   "lastOpenFiles": [
-    "Pasted image 20260226164422.png",
-    "Pasted image 20260226164246.png",
-    "Pasted image 20260226164206.png",
     "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
+    "3. Trattazione Matematica (si può saltare).md",
     "2. Sistemi 1D.md",
-    "Pasted image 20260226163954.png",
-    "Pasted image 20260226163738.png",
-    "Pasted image 20260226163424.png",
-    "Pasted image 20260226161744.png",
-    "Appunti Prof/SIstemi Dinamici unidim.pdf",
-    "Pasted image 20260226160915.png",
-    "Appunti extra.md",
-    "Images/Pasted image 20260226153906.png",
-    "Images/Pasted image 20260226153648.png",
-    "Images/Pasted image 20260226153013.png",
-    "1. Analisi Qualitativa.md",
-    "Appunti Prof/Sistemi Dinamici Discreti.pdf",
-    "Appunti Prof/SD unidim.pdf",
-    "Appunti Prof/Sistemi Dinamici Non Lineari.pdf",
-    "Appunti Prof/Sistemi Dinamici Planari.pdf",
-    "Appunti Prof/Sistemi Dinamici e Caos.pdf",
     "Appunti Prof/Sistemi Dinamici Lineari.pdf",
+    "1. Analisi Qualitativa.md",
+    "Appunti extra.md",
+    "Appunti Prof/Sistemi Dinamici Discreti.pdf",
+    "Appunti Prof/Sistemi Dinamici e Caos.pdf",
+    "Appunti Prof/SIstemi Dinamici unidim.pdf",
+    "Appunti Prof/Sistemi Dinamici Planari.pdf",
+    "Appunti Prof/Sistemi Dinamici Non Lineari.pdf",
+    "Images/Pasted image 20260304181547.png",
+    "Images/Pasted image 20260304180941.png",
+    "Images/Pasted image 20260304180935.png",
+    "Images/Pasted image 20260304180455.png",
+    "Images/Pasted image 20260304175920.png",
+    "Images/Pasted image 20260226161744.png",
+    "Images/Pasted image 20260226164422.png",
+    "Images/Pasted image 20260226164246.png",
+    "Images/Pasted image 20260226164206.png",
+    "Images/Pasted image 20260226163954.png",
+    "Appunti Prof/SD unidim.pdf",
     "Appunti Prof/IFT 30 - Eq di HJ, sistemi integrabili.pdf",
     "Appunti Prof",
     "1. Momenti.md",

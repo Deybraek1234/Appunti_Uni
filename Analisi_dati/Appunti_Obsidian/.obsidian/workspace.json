@@ -4,16 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "90035dc0ff3562d2",
+        "id": "e98c122d5b893d69",
         "type": "tabs",
         "children": [
           {
-            "id": "1c89f678a93ac909",
+            "id": "72c29356e476f6ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brutta Copia/2. Distribuzioni di Probabilità.md",
+                "file": "2. Distribuzioni di Probabilità.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2. Distribuzioni di Probabilità"
+            }
+          },
+          {
+            "id": "b06bbd41a5b23c6e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. Distribuzioni di Probabilità.md",
                 "mode": "source",
                 "source": false
               },
@@ -21,52 +35,8 @@
               "title": "2. Distribuzioni di Probabilità"
             }
           }
-        ]
-      },
-      {
-        "id": "e6a4249b27cfea0b",
-        "type": "split",
-        "children": [
-          {
-            "id": "e98c122d5b893d69",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "72c29356e476f6ef",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "2. Distribuzioni di Probabilità.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2. Distribuzioni di Probabilità"
-                }
-              }
-            ]
-          },
-          {
-            "id": "0d5fa88605888d32",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f316851d218a4325",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "sushi - appunti completi_rotated.pdf"
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "sushi - appunti completi_rotated"
-                }
-              }
-            ]
-          }
         ],
-        "direction": "horizontal"
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -214,17 +184,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "72c29356e476f6ef",
+  "active": "b06bbd41a5b23c6e",
   "lastOpenFiles": [
-    "sushi - appunti completi_rotated.pdf",
-    "1. Momenti.md",
+    "Ripasso teoria per lab della prima settimana.md",
     "2. Distribuzioni di Probabilità.md",
+    "Python Syntax.md",
+    "sushi - appunti completi_rotated.pdf",
     "Note Organizzative.md",
+    "Immagini",
+    "Immagini/Pasted image 20260303164614.png",
     "Brutta Copia/2. Distribuzioni di Probabilità.md",
-    "Untitled",
+    "1. Momenti.md",
     "sushi - appunti completi.pdf",
     "sushi - appunti completi.pdf_",
-    "Python Syntax.md",
     "te.md",
     "snippets.json~",
     "snippets.json",
