@@ -95,18 +95,3 @@
     font-weight: bold !important;
     font-style: italic;
 }
-
-.callout[data-callout="proof"] .callout-title-inner::before,
-.callout[data-callout="prf"] .callout-title-inner::before {
-    content: "Proof " attr(data-callout-metadata) ": " !important;
-    font-weight: bold !important;
-    font-style: italic;
-}
-
-.callout[data-callout="proof"],
-.callout[data-callout="prf"] {
-    --callout-color: ;144, 164, 174; 
-    --callout-icon: lightbulb;
-    background-color: rgba(74, 90, 112, 0.15);
-    border-left: 5px solid rgb(100, 116, 139);
-}
