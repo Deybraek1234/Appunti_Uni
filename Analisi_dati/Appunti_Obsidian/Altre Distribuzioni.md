@@ -21,26 +21,4 @@ La distribuzione gamma è:
 * normalizzata: $\int_{0}^\infty x^{\alpha-1} e^{ -\frac{x}{\beta} } \; dx = \beta^\alpha \Gamma(\alpha)$
 * ha valore di aspettazione $\mathbb{E}[x]=\alpha\beta$
 * ha varianza $\text{Var}(x) = \beta^{2}\alpha$
-
-# Distribuzione di Erlang
-È un caso particolare della funzione di gamma con $\alpha = k$, dove $k \in \mathbb{Z}$, e $\beta = 1$. 
->[!def] La distribuzione di Erlang
->La distribuzione di Erlang segue la funzione
->$$
-> f(x, k) = \frac{1}{(k-1)!} x^{k-1} e^{ -x }
->$$
-
-Ha valore di aspettazione 
-$$
-\mathbb{E}[x] = \frac{1}{(k-1)!} \underbrace{ \int_{0}^\infty x^k e^{ -x } \; dx }_{ \Gamma(k+1)=k! } = k
-$$
-e ha varianza 
-$$
-\text{Var}(x) = \mathbb{E}[x^2] - \mathbb{E}[x]^2 = k
-$$
-il che segue dal fatto che 
-$$
-\mathbb{E}[x^2] =\frac{1}{(k-1)!}\underbrace{ \int_{0}^\infty x^{k+1} e^{ -x } \; dx }_{ \Gamma(k+2) = (k+1)! } = k^2 + k
-$$
-
 # Distribuzione dei tempi d'attesa

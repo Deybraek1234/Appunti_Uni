@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Legge Dei Grandi Numeri.md",
+                "file": "3. Legge Dei Grandi Numeri_ Distribuzione Esponenziale.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. Legge Dei Grandi Numeri"
+              "title": "3. Legge Dei Grandi Numeri_ Distribuzione Esponenziale"
             }
           },
           {
@@ -214,9 +214,10 @@
   },
   "active": "cb2901a4f559f45a",
   "lastOpenFiles": [
-    "Altre Distribuzioni.md",
-    "3. Legge Dei Grandi Numeri.md",
     "2. Distribuzione Binomiale_Poisson_Gauss_Cauchy.md",
+    "3. Legge Dei Grandi Numeri_ Distribuzione Esponenziale.md",
+    "Altre Distribuzioni.md",
+    "Immagini/Pasted image 20260319153612.png",
     "Untitled",
     "Ripasso teoria per lab della prima settimana.md",
     "Python Syntax.md",

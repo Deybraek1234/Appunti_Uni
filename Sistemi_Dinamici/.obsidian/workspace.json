@@ -9,20 +9,6 @@
         "dimension": 41.12299465240641,
         "children": [
           {
-            "id": "eef018005a8a1c89",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. Sistemi Dinamici Lineari.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4. Sistemi Dinamici Lineari"
-            }
-          },
-          {
             "id": "5479536b9da6bd56",
             "type": "leaf",
             "state": {
@@ -36,8 +22,7 @@
               "title": "5. sistemi Dinamici Discreti"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "6e609233b8dad9cc",
@@ -50,11 +35,11 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Appunti Prof/Sistemi Dinamici e Caos.pdf",
+                "file": "Images/Sistemi Dinamici e Caos.pdf",
                 "page": 4,
-                "left": -14,
-                "top": 688,
-                "zoom": 1.162751677852349
+                "left": -11,
+                "top": 696,
+                "zoom": 1.32005033557047
               },
               "icon": "lucide-file-text",
               "title": "Sistemi Dinamici e Caos"
@@ -67,10 +52,10 @@
               "type": "pdf",
               "state": {
                 "file": "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
-                "page": 184,
-                "left": 180,
-                "top": 38,
-                "zoom": 1.32
+                "page": 188,
+                "left": 199,
+                "top": 187,
+                "zoom": 1.24
               },
               "icon": "lucide-file-text",
               "title": "S. H. Strogatz - Nonlinear dynamics and chaos"
@@ -255,15 +240,18 @@
   },
   "active": "5479536b9da6bd56",
   "lastOpenFiles": [
-    "Pasted image 20260319135117.png",
-    "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
-    "5. sistemi Dinamici Discreti.md",
-    "Pasted image 20260319134905.png",
-    "4. Sistemi Dinamici Lineari.md",
-    "Appunti Prof/Sistemi Dinamici e Caos.pdf",
-    "Appunti Prof/Sistemi Dinamici Lineari.pdf",
     "Lezione 10_03_2026.md",
-    "Pasted image 20260310160427.png",
+    "5. sistemi Dinamici Discreti.md",
+    "Images/Pasted image 20260319165509.png",
+    "Images/Pasted image 20260319165423.png",
+    "Images/Pasted image 20260319164213.png",
+    "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
+    "Images/Sistemi Dinamici e Caos.pdf",
+    "Images/Pasted image 20260319135117.png",
+    "Images/Pasted image 20260319134905.png",
+    "4. Sistemi Dinamici Lineari.md",
+    "Appunti Prof/Sistemi Dinamici Lineari.pdf",
+    "Images/Pasted image 20260310160427.png",
     "Images/Pasted image 20260310160325.png",
     "Images/Pasted image 20260310155547.png",
     "Images/Pasted image 20260310153127.png",
@@ -271,10 +259,6 @@
     "2. Sistemi 1D.md",
     "1. Analisi Qualitativa.md",
     "Images/Pasted image 20260309160825.png",
-    "Images/Pasted image 20260309154609.png",
-    "Images/Pasted image 20260309152538.png",
-    "Images/Pasted image 20260309152055.png",
-    "Images/Pasted image 20260309151943.png",
     "Appunti extra.md",
     "Appunti Prof/Sistemi Dinamici Discreti.pdf",
     "Appunti Prof/SIstemi Dinamici unidim.pdf",
