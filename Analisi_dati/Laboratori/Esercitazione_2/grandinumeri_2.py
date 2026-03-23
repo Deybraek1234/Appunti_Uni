@@ -30,14 +30,14 @@ def Main():
             medie_cauchy.append(media(distrib_cauchy(nb)))
 
 
-        q_medie_uniforme = q(medie_uniforme, np.full(m, valore_atteso_uniforme), np.full(m, dev_strd_uniforme))
+        q_medie_uniforme = q(medie_uniforme, np.full(m, valore_atteso_uniforme), np.full(m, dev_strd_uniforme), nb)
         _, borders, _ = axs[j,0].hist(q_medie_uniforme, bins = nbins, range = [-4,4], edgecolor = 'k')
         axs[j,0].set_title(f"Distribuzione Uniforme, n={nb}")
         centers = (borders[:-1] + borders[1:])/2 
         bin_width = borders[1] - borders[0]
         axs[j,0].plot(centers, distrib_normale(centers) * bin_width * m)
         
-        q_medie_esponenziale = q(medie_esponenziale, np.full(m, valore_atteso_esponenziale), np.full(m,dev_strd_esponenziale))
+        q_medie_esponenziale = q(medie_esponenziale, np.full(m, valore_atteso_esponenziale), np.full(m,dev_strd_esponenziale), nb)
         _, borders, _ = axs[j,1].hist(q_medie_esponenziale, bins = nbins, range= [-4,4], edgecolor = 'k')
         axs[j,1].set_title(f"Distribuzione Esponenziale, n={nb}")
         centers = (borders[:-1] + borders[1:])/2
@@ -49,13 +49,14 @@ def Main():
         centers = (borders[:-1] + borders[1:])/2
         bin_width = borders[1] - borders[0]
         axs[j,2].plot(centers, distrib_normale(centers) * bin_width * m)
+        axs[j,2].plot(centers, distrib_cauchy_funz(centers) * bin_width*m)
 
         medie_uniforme.clear()
         medie_esponenziale.clear()
         medie_cauchy.clear()
 
-def q(media, valore_atteso, dev_strd):
-    return((media - valore_atteso)/(dev_strd/np.sqrt(nb)))
+def q(media, valore_atteso, dev_strd, n):
+    return((media - valore_atteso)/(dev_strd/np.sqrt(n)))
 
 def media(data):
     return(np.sum(data)/float(np.size(data)))
@@ -70,8 +71,11 @@ def distrib_esponenziale(n):
 def distrib_cauchy(n):
     return(np.divide(np.random.normal(size=n), np.random.normal(size=n)))
 
-def distrib_normale(x, dev_strd):
+def distrib_normale(x):
     return(1/(np.sqrt(2*np.pi )) * np.exp(-(x**2)/2))
+
+def distrib_cauchy_funz(x):
+    return(1/np.pi * 1/(1+x**2))
 
 if __name__ == "__main__":
     Main()
