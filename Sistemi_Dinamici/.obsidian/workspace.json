@@ -52,10 +52,10 @@
               "type": "pdf",
               "state": {
                 "file": "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
-                "page": 208,
-                "left": 354,
-                "top": -33,
-                "zoom": 0.9
+                "page": 231,
+                "left": 582,
+                "top": -18,
+                "zoom": 0.8230403800475061
               },
               "icon": "lucide-file-text",
               "title": "S. H. Strogatz - Nonlinear dynamics and chaos"
@@ -134,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211.5,
-    "collapsed": true
+    "width": 211.5
   },
   "right": {
     "id": "4f4b21d1f2825abd",
