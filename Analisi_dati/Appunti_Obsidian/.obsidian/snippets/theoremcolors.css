@@ -12,7 +12,7 @@
 .callout[data-callout="theorem"], 
 .callout[data-callout="thm"] {
     --callout-color: 0, 102, 204;
-    --callout-icon: sigma;
+    --callout-icon: variable;
     background-color: rgba(0, 102, 204, 0.05);
     border-left: 5px solid rgb(0, 102, 204);
 }

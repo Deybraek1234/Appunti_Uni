@@ -10,5 +10,6 @@
   "readableLineLength": true,
   "showLineNumber": true,
   "vimMode": true,
-  "autoPairMarkdown": false
+  "autoPairMarkdown": false,
+  "alwaysUpdateLinks": true
 }

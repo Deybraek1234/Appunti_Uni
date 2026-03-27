@@ -4,25 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "fe5855e81448741b",
-        "type": "tabs",
+        "id": "c0668ae94052127d",
+        "type": "split",
         "dimension": 41.12299465240641,
         "children": [
           {
-            "id": "5479536b9da6bd56",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5. Sistemi Dinamici Discreti.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5. Sistemi Dinamici Discreti"
-            }
+            "id": "fe5855e81448741b",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5479536b9da6bd56",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "5. Sistemi Dinamici Discreti.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "5. Sistemi Dinamici Discreti"
+                }
+              }
+            ]
+          },
+          {
+            "id": "e6bc0e1b45680375",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e7dfcfcfd5b7d73d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "5. Bella Sistemi Dinamici Discreti.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "5. Bella Sistemi Dinamici Discreti"
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       },
       {
         "id": "6e609233b8dad9cc",
@@ -36,10 +63,10 @@
               "type": "pdf",
               "state": {
                 "file": "Appunti Prof/Sistemi Dinamici Discreti.pdf",
-                "page": 5,
-                "left": -11,
-                "top": 805,
-                "zoom": 1.32005033557047
+                "page": 11,
+                "left": -14,
+                "top": 415,
+                "zoom": 1.162751677852349
               },
               "icon": "lucide-file-text",
               "title": "Sistemi Dinamici Discreti"
@@ -52,10 +79,10 @@
               "type": "pdf",
               "state": {
                 "file": "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
-                "page": 231,
-                "left": 582,
-                "top": -18,
-                "zoom": 0.8230403800475061
+                "page": 208,
+                "left": 586,
+                "top": -19,
+                "zoom": 0.8230403800475059
               },
               "icon": "lucide-file-text",
               "title": "S. H. Strogatz - Nonlinear dynamics and chaos"
@@ -129,8 +156,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -241,23 +267,24 @@
   },
   "active": "5479536b9da6bd56",
   "lastOpenFiles": [
+    "5. Bella Sistemi Dinamici Discreti.md",
     "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
     "5. Sistemi Dinamici Discreti.md",
     "Appunti Prof/Sistemi Dinamici Discreti.pdf",
+    "Pasted image 20260326175406.png",
+    "Pasted image 20260326174906.png",
+    "Images/Pasted image 20260326173624.png",
+    "Images/Pasted image 20260326173536.png",
+    "Images/Pasted image 20260326173528.png",
+    "Images/Pasted image 20260326173402.png",
+    "4. Sistemi Dinamici Lineari (belli).md",
+    "Images/Pasted image 20260326150528.png",
+    "4. Sistemi Dinamici Lineari.md",
     "Images/Sistemi Dinamici e Caos.pdf",
     "Images/Pasted image 20260324150302.png",
-    "Lezione 10_03_2026.md",
     "Images/Pasted image 20260319165509.png",
     "Images/Pasted image 20260319165423.png",
-    "Images/Pasted image 20260319164213.png",
-    "Images/Pasted image 20260319135117.png",
-    "Images/Pasted image 20260319134905.png",
-    "4. Sistemi Dinamici Lineari.md",
     "Appunti Prof/Sistemi Dinamici Lineari.pdf",
-    "Images/Pasted image 20260310160427.png",
-    "Images/Pasted image 20260310160325.png",
-    "Images/Pasted image 20260310155547.png",
-    "Images/Pasted image 20260310153127.png",
     "3. Trattazione Matematica (si può saltare).md",
     "2. Sistemi 1D.md",
     "1. Analisi Qualitativa.md",
