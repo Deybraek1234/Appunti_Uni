@@ -23,7 +23,7 @@ def initialize():
 
     # histogramma normale prima misura
     counts, borders, _ = axs[0,0].hist(l1, bins = 80, range=[mu1-4*std_dev, mu1+4*std_dev], edgecolor = 'k', label="Valori generati mu1")
-    axs[0,0].set_xlabel("Valori generati centrati in 0.01")
+    axs[0,0].set_xlabel("Valori generati centrati in 0.01 (m)")
     axs[0,0].set_ylabel("Frequenza")
     # calcoli per gaussiana prima
     centers = (borders[:-1] + borders[1:])/2
@@ -39,7 +39,7 @@ def initialize():
 
     # histogramma normale seconda misura
     counts, borders, _ = axs[0,1].hist(l2, bins = 80, range=[mu2-4*std_dev, mu2+4*std_dev], edgecolor = 'k', label="Valori generati mu2")
-    axs[0,1].set_xlabel("Valori generati centrati in 0.02")
+    axs[0,1].set_xlabel("Valori generati centrati in 0.02 (m)")
     axs[0,1].set_xlabel("Frequenza")
     # calcoli per gaussiana seconda
     centers = (borders[:-1] + borders[1:])/2
@@ -80,8 +80,8 @@ def calcolo_cov():
     axs[1,0].scatter(l1, l2, label="Tutti punti")
     axs[1,0].scatter(punti_interni_1, punti_interni_2, label=f"Punti Interni: {len(punti_interni_1)}")
     axs[1,0].axis('equal')
-    axs[1,0].set_xlabel("Valori di L1")
-    axs[1,0].set_ylabel("Valori di L2")
+    axs[1,0].set_xlabel("Valori di L1 (m)")
+    axs[1,0].set_ylabel("Valori di L2 (m)")
     axs[1,0].set_title("Plot L2 vs L1")
 
     # fisso valori per prob.condizionata
@@ -104,7 +104,7 @@ def calcolo_cov():
     errors = np.sqrt(counts)
     axs[1,1].plot(centers, centers_expected, label="Curva Aspettata")
     axs[1,1].errorbar(centers, counts, yerr=errors, fmt='none', elinewidth=1, capsize=2, color='red', alpha=0.6, label="Errori punti interni fascia")
-    axs[1,1].set_title("Istogramma Punti Interno della Fascia")
+    axs[1,1].set_title("Istogramma Punti Interno della Fascia (m())")
     axs[1,1].legend()
     axs[1,1].set_xlabel("Punti all'interno della fascia")
     axs[1,1].set_ylabel("Frequenza")
