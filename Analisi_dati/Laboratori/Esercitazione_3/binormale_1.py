@@ -48,7 +48,7 @@ def initialize():
     axs[0,1].plot(centers, expected_centers, '-', label="Gaussiana Aspettata l2")
     axs[0,1].set_ylim(bottom=0.0)
     # errori
-    errosr = np.sqrt(counts)
+    errors = np.sqrt(counts)
     axs[0,1].errorbar(centers, counts, yerr=errors, elinewidth=1, capsize=2, ecolor='red', fmt='none', alpha=0.6, label = "Errori l2")
     axs[0,1].legend()
     axs[0,1].set_title("Dati generati per l2")
@@ -68,7 +68,7 @@ def calcolo_cov():
 
     # calcoli della covarianza e r di l1, l2
     cov_xy = covariance_xy(l1, l2)
-    r = cov_xy/(std_dev**2)
+    r = cov_xy/(np.std(l1)*np.std(l2))
     valori_q2 = q2(r, l1, l2, mu1, mu2) 
     # bool per stabilire quali punti sono all'interno di 1
     punti_interni_bool = valori_q2 <= 1
@@ -77,15 +77,15 @@ def calcolo_cov():
     punti_interni_1 = l1[punti_interni_bool]
     punti_interni_2 = l2[punti_interni_bool]
     # plottare i punti
-    axs[1,0].scatter(l1, l2, label="Tutti punti")
-    axs[1,0].scatter(punti_interni_1, punti_interni_2, label=f"Punti Interni: {len(punti_interni_1)}")
+    axs[1,0].scatter(l1, l2, label="Tutti punti", s=1)
+    axs[1,0].scatter(punti_interni_1, punti_interni_2, label=f"Punti Interni: {len(punti_interni_1)} \nRapporto: {len(punti_interni_1)/len(l1)*100}%", s=1)
     axs[1,0].axis('equal')
     axs[1,0].set_xlabel("Valori di L1 (m)")
     axs[1,0].set_ylabel("Valori di L2 (m)")
     axs[1,0].set_title("Plot L2 vs L1")
 
     # fisso valori per prob.condizionata
-    valore_fissato = np.random.uniform(0.0194, 0.0206, 1)
+    valore_fissato = 0.0197
     tolleranza = 0.00005
 
     # filtro punti interni
