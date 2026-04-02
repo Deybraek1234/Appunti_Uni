@@ -13,53 +13,64 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5.  Sistemi Dinamici Discreti.md",
+                "file": "4. Sistemi Dinamici Lineari.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5.  Sistemi Dinamici Discreti"
+              "title": "4. Sistemi Dinamici Lineari"
             }
           }
         ]
       },
       {
-        "id": "562cf9bb9ddf8c1c",
-        "type": "tabs",
+        "id": "aaafd39c309e4ff4",
+        "type": "split",
         "children": [
           {
-            "id": "3ed086cfc5319b0e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
-                "page": 193,
-                "left": 29,
-                "top": 30,
-                "zoom": 1.46
-              },
-              "icon": "lucide-file-text",
-              "title": "S. H. Strogatz - Nonlinear dynamics and chaos"
-            }
+            "id": "0a5980453052bbe9",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "f7c5f1f5c10a9977",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "4. Sistemi Dinamici Lineari (belli).md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "4. Sistemi Dinamici Lineari (belli)"
+                }
+              }
+            ]
           },
           {
-            "id": "f06a9c7cec54b017",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Appunti Prof/Sistemi Dinamici Discreti.pdf",
-                "page": 17,
-                "left": -15,
-                "top": 676,
-                "zoom": 0.977768456375839
-              },
-              "icon": "lucide-file-text",
-              "title": "Sistemi Dinamici Discreti"
-            }
+            "id": "a5a1cb4954193d41",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d1b139730ef0f0d9",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Appunti Prof/Sistemi Dinamici Lineari.pdf",
+                    "page": 5,
+                    "left": 63,
+                    "top": 720,
+                    "zoom": 1.2
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "Sistemi Dinamici Lineari"
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -218,40 +229,42 @@
       "pandoc-extended-markdown:Open list panel": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "7768439714d00382",
   "lastOpenFiles": [
-    "5.  Sistemi Dinamici Discreti.md",
-    "Pasted image 20260402113456.png",
-    "Pasted image 20260402113419.png",
-    "Pasted image 20260402113250.png",
-    "Pasted image 20260402113208.png",
-    "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
+    "4. Sistemi Dinamici Lineari (belli).md",
+    "4. Sistemi Dinamici Lineari.md",
+    "Appunti Prof/Sistemi Dinamici Lineari.pdf",
     "Appunti Prof/Sistemi Dinamici Discreti.pdf",
+    "Appunti Prof/Sistemi Dinamici e Caos.pdf",
+    "Appunti Prof/Sistemi Dinamici Lineari_1.pdf",
+    "5.  Sistemi Dinamici Discreti.md",
+    "6. Sistemi Dinamici Differenziali.md",
+    "Excalidraw/Drawing 2026-04-02 15.34.22.excalidraw.md",
+    "Excalidraw",
+    "Pasted image 20260402153330.png",
+    "Pasted image 20260402153302.png",
+    "Appunti Prof/Sistemi Dinamici Non Lineari.pdf",
+    "Appunti Prof/Sistemi Dinamici Planari.pdf",
+    "Images/Pasted image 20260402143329.png",
+    "Images/Pasted image 20260402143222.png",
+    "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
+    "Appunti Prof/SIstemi Dinamici unidim.pdf",
+    "Images/Pasted image 20260402113456.png",
+    "Images/Pasted image 20260402113419.png",
+    "Images/Pasted image 20260402113250.png",
+    "Images/Pasted image 20260402113208.png",
     "Images/Pasted image 20260331150415.png",
     "Images/Pasted image 20260331144739.png",
-    "Images/Pasted image 20260331144651.png",
-    "Images/Pasted image 20260331144437.png",
-    "Images/Sistemi Dinamici Non Lineari.pdf",
-    "Appunti Prof/Sistemi Dinamici Lineari.pdf",
-    "Appunti Prof/SIstemi Dinamici unidim.pdf",
-    "Appunti Prof/Sistemi Dinamici Planari.pdf",
-    "Images/Pasted image 20260331143606.png",
-    "4. Sistemi Dinamici Lineari (belli).md",
-    "6..md",
     "Untitled",
-    "4. Sistemi Dinamici Lineari.md",
     "3. Trattazione Matematica (si può saltare).md",
     "2. Sistemi 1D.md",
-    "Images/Pasted image 20260326174906.png",
     "Sistemi Dinamici Discreti (brutta coppia).md",
-    "Images/Sistemi Dinamici e Caos.pdf",
     "1. Analisi Qualitativa.md",
     "Appunti extra.md",
-    "Appunti Prof/SD unidim.pdf",
-    "Appunti Prof/IFT 30 - Eq di HJ, sistemi integrabili.pdf",
     "1. Momenti.md",
     "2. Distribuzioni di Probabilità.md",
     "Brutta Copia/2. Distribuzioni di Probabilità.md",
