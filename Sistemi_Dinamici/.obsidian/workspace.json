@@ -34,10 +34,10 @@
               "type": "pdf",
               "state": {
                 "file": "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
-                "page": 200,
-                "left": 577,
-                "top": 186,
-                "zoom": 0.93
+                "page": 193,
+                "left": 29,
+                "top": 30,
+                "zoom": 1.46
               },
               "icon": "lucide-file-text",
               "title": "S. H. Strogatz - Nonlinear dynamics and chaos"
@@ -52,15 +52,14 @@
                 "file": "Appunti Prof/Sistemi Dinamici Discreti.pdf",
                 "page": 17,
                 "left": -15,
-                "top": 700,
+                "top": 676,
                 "zoom": 0.977768456375839
               },
               "icon": "lucide-file-text",
               "title": "Sistemi Dinamici Discreti"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -224,9 +223,13 @@
   },
   "active": "7768439714d00382",
   "lastOpenFiles": [
-    "Appunti Prof/Sistemi Dinamici Discreti.pdf",
     "5.  Sistemi Dinamici Discreti.md",
+    "Pasted image 20260402113456.png",
+    "Pasted image 20260402113419.png",
+    "Pasted image 20260402113250.png",
+    "Pasted image 20260402113208.png",
     "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
+    "Appunti Prof/Sistemi Dinamici Discreti.pdf",
     "Images/Pasted image 20260331150415.png",
     "Images/Pasted image 20260331144739.png",
     "Images/Pasted image 20260331144651.png",
@@ -244,10 +247,6 @@
     "2. Sistemi 1D.md",
     "Images/Pasted image 20260326174906.png",
     "Sistemi Dinamici Discreti (brutta coppia).md",
-    "Images/Pasted image 20260326175406.png",
-    "Images/Pasted image 20260326173624.png",
-    "Images/Pasted image 20260326173536.png",
-    "Images/Pasted image 20260326173528.png",
     "Images/Sistemi Dinamici e Caos.pdf",
     "1. Analisi Qualitativa.md",
     "Appunti extra.md",

@@ -110,3 +110,20 @@
     font-weight: bold !important;
     font-style: italic;
 }
+
+/* 7. REMINDERS - Crimson Red */
+.callout[data-callout="reminder"], 
+.callout[data-callout="rem"] {
+    --callout-color: 220, 20, 60; /* Crimson */
+    --callout-icon: bell; /* Lucide bell icon */
+    background-color: rgba(220, 20, 60, 0.05);
+    border-left: 5px solid rgb(220, 20, 60);
+}
+
+/* Label for Reminders (Matches your Example/Observation format) */
+.callout[data-callout="reminder"] .callout-title-inner::before,
+.callout[data-callout="rem"] .callout-title-inner::before {
+    content: "Reminder " attr(data-callout-metadata) ": " !important;
+    font-weight: bold !important;
+    font-style: italic;
+}
