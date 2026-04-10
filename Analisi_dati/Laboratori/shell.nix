@@ -33,6 +33,8 @@ pkgs.mkShell {
   ];
 
   shellHook=''
+    export PYTHONPATH="${toString ./.}:$PYTHONPATH"
+
     echo "Python environment loaded"
     python --version
   '';
