@@ -13,34 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Sistemi Dinamici Lineari.md",
+                "file": "5.  Sistemi Dinamici Discreti.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. Sistemi Dinamici Lineari"
+              "title": "5.  Sistemi Dinamici Discreti"
             }
-          }
-        ]
-      },
-      {
-        "id": "fd0a4a795efb1d03",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "47160f5378f15420",
+            "id": "a40610dcf51809d8",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Appunti Prof/Sistemi Dinamici Lineari.pdf",
-                "page": 5,
-                "left": -15,
-                "top": 790,
-                "zoom": 0.977768456375839
+                "file": "Giorno Dedicato alla Pace.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Sistemi Dinamici Lineari"
+              "icon": "lucide-file",
+              "title": "Giorno Dedicato alla Pace"
             }
           }
         ]
@@ -134,11 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Giorno Dedicato alla Pace.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Giorno Dedicato alla Pace"
             }
           },
           {
@@ -162,12 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Giorno Dedicato alla Pace.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Giorno Dedicato alla Pace"
             }
           },
           {
@@ -178,6 +172,16 @@
               "state": {},
               "icon": "list-panel-view",
               "title": "List panel"
+            }
+          },
+          {
+            "id": "03bc735007a0069e",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
@@ -208,27 +212,28 @@
   },
   "active": "7768439714d00382",
   "lastOpenFiles": [
-    "Appunti Prof/Sistemi Dinamici Lineari.pdf",
     "4. Sistemi Dinamici Lineari.md",
-    "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
+    "3. Trattazione Matematica (si può saltare).md",
+    "6. Sistemi Dinamici Differenziali.md",
+    "Giorno Dedicato alla Pace.md",
     "Appunti Prof/Sistemi Dinamici Non Lineari.pdf",
+    "Appunti Prof/Sistemi Dinamici Planari.pdf",
+    "Appunti Prof/SIstemi Dinamici unidim.pdf",
+    "Appunti Prof/Sistemi Dinamici Lineari.pdf",
+    "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
     "Sistemi Dinamici Lineari.md",
     "Sistemi Dinamici Discreti (brutta coppia).md",
     "Images/Pasted image 20260413124129.png",
-    "6. Sistemi Dinamici Differenziali.md",
     "5.  Sistemi Dinamici Discreti.md",
     "Appunti Prof/Sistemi Dinamici e Caos.pdf",
-    "3. Trattazione Matematica (si può saltare).md",
     "2. Sistemi 1D.md",
     "Images/Pasted image 20260413124147.png",
     "Pasted image 20260413124059.png",
     "Pasted image 20260413124007.png",
     "Pasted image 20260413124000.png",
-    "Appunti Prof/SIstemi Dinamici unidim.pdf",
     "1. Analisi Qualitativa.md",
     "Pasted image 20260411111859.png",
     "Pasted image 20260411111839.png",
-    "Appunti Prof/Sistemi Dinamici Planari.pdf",
     "Appunti Prof/Sistemi Dinamici Discreti.pdf",
     "Images/Pasted image 20260402153330.png",
     "Appunti Prof/Sistemi Dinamici Lineari_1.pdf",
