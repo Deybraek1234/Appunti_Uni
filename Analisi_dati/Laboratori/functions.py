@@ -8,8 +8,11 @@ def distrib_uniforme(n_amount, lower_bound = 0, upper_bound = 1):
     data = np.random.uniform(lower_bound, upper_bound ,n_amount)
     return (data)
 
-def funz_esponenziale(x, l = 1):
-    return l*np.exp(-x*l)/l
+def funz_esponenziale_l(x, l = 1):
+    return l*np.exp(-x*l)
+
+def funz_esponenziale_tau(x, t = 1):
+    return np.exp(-x/t)/t
 
 def gaussian_func(x, mu = 0, std_dev = 1):
     return 1/(np.sqrt(2*np.pi)*std_dev) * np.exp(-((x-mu)**2)/(2*std_dev**2))
@@ -47,7 +50,7 @@ def plot_graph_single_axis(axs, plot_config, is_overlay):
     x_data = data.get("x", [])
     y_data = data.get("y", [])
     #dynamic label
-    label_name = plot_config.get("name", "overlay" if is_overlay else "Base Data")
+    label_name = plot_config.get("name" if is_overlay else "Base Data")
 
     errors = plot_config.get("errors", {})
     xerr = errors.get("xerr", None)
@@ -68,16 +71,20 @@ def plot_graph_single_axis(axs, plot_config, is_overlay):
         # fit function if asked for
         fit = hist_config.get("fit", [False, None])
         # add more expected curves
-        print(fit)
         if fit[0] == True:
             fit_func = fit[1]
             match fit_func:
                 case "gaussian":
-                    y = gaussian_func(centers)
+                    mu = hist_config.get("mu", 0)
+                    sigma = hist_config.get("sigma", 1)
+                    y = gaussian_func(centers, mu, sigma)
+                case "exponential_tau":
+                    tau = hist_config.get("tau", 1)
+                    y = funz_esponenziale_tau(centers, tau)
 
 
-        y = y * bin_width * len(x_data)
-        axs.plot(centers, y, label="Curva Aspettata")
+            y = y * bin_width * len(x_data)
+            axs.plot(centers, y, label="Curva Aspettata")
 
     elif plot_type == "scatter":
         axs.scatter(x_data, y_data, label='Data Points', s=1)
@@ -142,7 +149,7 @@ def plot_grid(plot_configs):
 #       "data": {"x": x_vals}, (required)
 #       "errors":{"yerrs":y_errors} (not required)
 #       "titles":{"main": "Histogram Title", "x": "X-Axis", "y":"Y-Axis"} (not required)
-#       "config":{"nbins": number_bins, "fit":[True/false, fit_func]} (not required)
+#       "config":{"nbins": number_bins, "fit":[True/false, fit_func], (for fit func input parameters, such as gaussian: "mu":mu, "sigma":sigma), and exponential_tau "tau": tau} (not required)
 #   },
 #   {
 #       "type":"scatter",(required)
