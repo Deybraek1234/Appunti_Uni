@@ -1,0 +1,8 @@
+{
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": false
+    },
+    "python.languageServer": "None",
+    "nixEnvSelector.nixFile": "${workspaceFolder}/shell.nix",
+    "python-envs.defaultEnvManager": "ms-python.python:system"
+}

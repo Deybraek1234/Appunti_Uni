@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "c78a789392c99b56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "7. Sistemi Planari.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "7. Sistemi Planari"
+            }
+          },
+          {
             "id": "a40610dcf51809d8",
             "type": "leaf",
             "state": {
@@ -34,8 +48,19 @@
               "icon": "lucide-file",
               "title": "Giorno Dedicato alla Pace"
             }
+          },
+          {
+            "id": "035167555c41ed2f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -170,8 +195,8 @@
             "state": {
               "type": "list-panel-view",
               "state": {},
-              "icon": "list-panel-view",
-              "title": "List panel"
+              "icon": "lucide-ghost",
+              "title": "list-panel-view"
             }
           },
           {
@@ -180,8 +205,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           }
         ],
@@ -210,21 +235,25 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "7768439714d00382",
+  "active": "035167555c41ed2f",
   "lastOpenFiles": [
-    "Excalidraw/6. Sistemi Dinamici Differenziali 2026-04-23 15.05.28.excalidraw.md",
     "6. Sistemi Dinamici Differenziali.md",
-    "Giorno Dedicato alla Pace.md",
+    "7. Sistemi Planari.md",
+    "4. Sistemi Dinamici Lineari.md",
+    "3. Trattazione Matematica (si può saltare).md",
+    "2. Sistemi 1D.md",
+    "Images/Pasted image 20260421164347.png",
+    "Excalidraw/Drawing 2026-04-23 14.43.31.excalidraw.md",
+    "Excalidraw/6. Sistemi Dinamici Differenziali 2026-04-23 15.05.28.excalidraw.md",
+    "Excalidraw/Drawing 2026-04-02 15.34.22.excalidraw.md",
     "Sistemi Dinamici Discreti (brutta coppia).md",
     "Sistemi Dinamici Lineari.md",
-    "Excalidraw/Drawing 2026-04-23 14.43.31.excalidraw.md",
-    "Images/Pasted image 20260421164347.png",
+    "Pasted image 20260421164347.png",
     "Images/Pasted image 20260421144634.png",
     "Images/Pasted image 20260421151031.png",
     "Images/Pasted image 20260421150637.png",
     "5.  Sistemi Dinamici Discreti.md",
-    "4. Sistemi Dinamici Lineari.md",
-    "3. Trattazione Matematica (si può saltare).md",
+    "Giorno Dedicato alla Pace.md",
     "Appunti Prof/Sistemi Dinamici Non Lineari.pdf",
     "Appunti Prof/Sistemi Dinamici Planari.pdf",
     "Appunti Prof/SIstemi Dinamici unidim.pdf",
@@ -232,16 +261,13 @@
     "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
     "Images/Pasted image 20260413124129.png",
     "Appunti Prof/Sistemi Dinamici e Caos.pdf",
-    "2. Sistemi 1D.md",
     "Images/Pasted image 20260413124147.png",
     "Pasted image 20260413124059.png",
     "Pasted image 20260413124007.png",
     "Pasted image 20260413124000.png",
     "1. Analisi Qualitativa.md",
-    "Pasted image 20260411111859.png",
     "Appunti Prof/Sistemi Dinamici Discreti.pdf",
     "Appunti Prof/Sistemi Dinamici Lineari_1.pdf",
-    "Excalidraw/Drawing 2026-04-02 15.34.22.excalidraw.md",
     "Excalidraw",
     "Untitled",
     "Appunti extra.md",
