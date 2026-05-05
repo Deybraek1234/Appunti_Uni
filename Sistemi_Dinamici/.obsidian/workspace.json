@@ -8,21 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7768439714d00382",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6. Sistemi Dinamici Differenziali.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6. Sistemi Dinamici Differenziali"
-            }
-          },
-          {
-            "id": "c78a789392c99b56",
+            "id": "035167555c41ed2f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,33 +20,30 @@
               "icon": "lucide-file",
               "title": "7. Sistemi Planari"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "6f929704e9d789cd",
+        "type": "tabs",
+        "children": [
           {
-            "id": "a40610dcf51809d8",
+            "id": "9befcaa31af991e4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Giorno Dedicato alla Pace.md",
-                "mode": "source",
-                "source": false
+                "file": "Appunti Prof/Sistemi Dinamici e Caos.pdf",
+                "page": 6,
+                "left": -15,
+                "top": 653,
+                "zoom": 0.9790268456375839
               },
-              "icon": "lucide-file",
-              "title": "Giorno Dedicato alla Pace"
-            }
-          },
-          {
-            "id": "035167555c41ed2f",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-file-text",
+              "title": "Sistemi Dinamici e Caos"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -237,8 +220,19 @@
   },
   "active": "035167555c41ed2f",
   "lastOpenFiles": [
-    "6. Sistemi Dinamici Differenziali.md",
+    "Appunti Prof/Sistemi Dinamici e Caos.pdf",
     "7. Sistemi Planari.md",
+    "Excalidraw/7. Sistemi Planari 2026-05-05 16.24.08.excalidraw.md",
+    "Pasted image 20260505155536.png",
+    "Pasted image 20260505152520.png",
+    "Appunti Prof/Sistemi Dinamici Discreti.pdf",
+    "Appunti Prof/Sistemi Dinamici Planari.pdf",
+    "Appunti Prof/Sistemi Dinamici Non Lineari.pdf",
+    "Appunti Prof/Sistemi Dinamici Lineari.pdf",
+    "Excalidraw/7. Sistemi Planari 2026-05-05 14.31.05.excalidraw.md",
+    "Appunti Prof/SIstemi Dinamici unidim.pdf",
+    "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
+    "6. Sistemi Dinamici Differenziali.md",
     "4. Sistemi Dinamici Lineari.md",
     "3. Trattazione Matematica (si può saltare).md",
     "2. Sistemi 1D.md",
@@ -254,19 +248,10 @@
     "Images/Pasted image 20260421150637.png",
     "5.  Sistemi Dinamici Discreti.md",
     "Giorno Dedicato alla Pace.md",
-    "Appunti Prof/Sistemi Dinamici Non Lineari.pdf",
-    "Appunti Prof/Sistemi Dinamici Planari.pdf",
-    "Appunti Prof/SIstemi Dinamici unidim.pdf",
-    "Appunti Prof/Sistemi Dinamici Lineari.pdf",
-    "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
     "Images/Pasted image 20260413124129.png",
-    "Appunti Prof/Sistemi Dinamici e Caos.pdf",
     "Images/Pasted image 20260413124147.png",
     "Pasted image 20260413124059.png",
-    "Pasted image 20260413124007.png",
-    "Pasted image 20260413124000.png",
     "1. Analisi Qualitativa.md",
-    "Appunti Prof/Sistemi Dinamici Discreti.pdf",
     "Appunti Prof/Sistemi Dinamici Lineari_1.pdf",
     "Excalidraw",
     "Untitled",

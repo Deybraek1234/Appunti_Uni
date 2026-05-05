@@ -13,7 +13,7 @@ plot.errorbar(tempo, ln_conteggi, yerr=sigma, fmt='o', label="Dati con Errore")
 plot.grid(True)
 plot.legend()
 
-N = len(t)
+
 
 plot.show()
 
