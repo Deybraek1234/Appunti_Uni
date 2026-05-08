@@ -34,10 +34,10 @@
               "type": "pdf",
               "state": {
                 "file": "Appunti Prof/Sistemi Dinamici e Caos.pdf",
-                "page": 6,
-                "left": -15,
-                "top": 653,
-                "zoom": 0.9790268456375839
+                "page": 5,
+                "left": -40,
+                "top": 134,
+                "zoom": 0.376258389261745
               },
               "icon": "lucide-file-text",
               "title": "Sistemi Dinamici e Caos"
@@ -218,15 +218,17 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "035167555c41ed2f",
+  "active": "9befcaa31af991e4",
   "lastOpenFiles": [
-    "Appunti Prof/Sistemi Dinamici e Caos.pdf",
     "7. Sistemi Planari.md",
+    "Appunti Prof/Sistemi Dinamici e Caos.pdf",
+    "Excalidraw/7. Sistemi Planari 2026-05-05 16.32.43.excalidraw.md",
+    "Appunti Prof/Sistemi Dinamici Planari.pdf",
+    "Excalidraw/7. Sistemi Planari 2026-05-05 16.30.34.excalidraw.md",
     "Excalidraw/7. Sistemi Planari 2026-05-05 16.24.08.excalidraw.md",
     "Pasted image 20260505155536.png",
     "Pasted image 20260505152520.png",
     "Appunti Prof/Sistemi Dinamici Discreti.pdf",
-    "Appunti Prof/Sistemi Dinamici Planari.pdf",
     "Appunti Prof/Sistemi Dinamici Non Lineari.pdf",
     "Appunti Prof/Sistemi Dinamici Lineari.pdf",
     "Excalidraw/7. Sistemi Planari 2026-05-05 14.31.05.excalidraw.md",
