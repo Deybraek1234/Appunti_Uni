@@ -37,24 +37,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "2d0164d0907cb3ff",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ef959106a4fefc0f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Libri di Testo/cowan_statistical_data_analysis.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "cowan_statistical_data_analysis"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -205,11 +187,13 @@
   },
   "active": "8d32f698e36a0a33",
   "lastOpenFiles": [
-    "7. Metodo Minimi Quadrati.md",
+    "Libri di Testo/vstatmp_engl.pdf",
     "8. Test di Ipotesi.md",
     "Libri di Testo/cowan_statistical_data_analysis.pdf",
     "Libri di Testo/[George_E._P._Box,_J._Stuart_Hunter,_William_G._Hu(BookZZ.org).pdf",
-    "Libri di Testo/vstatmp_engl.pdf",
+    "Pasted image 20260510112442.png",
+    "Pasted image 20260510112142.png",
+    "7. Metodo Minimi Quadrati.md",
     "8..md",
     "Libri di Testo",
     "(guarda appunti prof) Metodo dei Minimi Quadrati.md",
