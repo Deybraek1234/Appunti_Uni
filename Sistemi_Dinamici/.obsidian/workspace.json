@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Sistemi Dinamici Lineari.md",
+                "file": "5.  Sistemi Dinamici Discreti.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. Sistemi Dinamici Lineari"
+              "title": "5.  Sistemi Dinamici Discreti"
             }
           }
         ]
@@ -218,6 +218,7 @@
   },
   "active": "21c14c8b7e14dc11",
   "lastOpenFiles": [
+    "4. Sistemi Dinamici Lineari.md",
     "6. Sistemi Dinamici Differenziali.md",
     "7. Sistemi Planari.md",
     "Appunti Prof/6. Sistemi Dinamici Discreti.pdf",
@@ -227,7 +228,6 @@
     "Appunti Prof/2. Sistemi Dinamici Lineari.pdf",
     "Appunti Prof/1. SIstemi Dinamici unidim.pdf",
     "5.  Sistemi Dinamici Discreti.md",
-    "4. Sistemi Dinamici Lineari.md",
     "Excalidraw/7. Sistemi Planari 2026-05-05 16.32.43.excalidraw.md",
     "Excalidraw/7. Sistemi Planari 2026-05-05 16.30.34.excalidraw.md",
     "Excalidraw/7. Sistemi Planari 2026-05-05 16.24.08.excalidraw.md",
