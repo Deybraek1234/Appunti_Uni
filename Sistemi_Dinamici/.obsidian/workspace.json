@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Sistemi 1D.md",
+                "file": "Teoremi Importanti.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. Sistemi 1D"
+              "title": "Teoremi Importanti"
             }
           }
         ],
@@ -213,14 +213,14 @@
   },
   "active": "ce8990e5ef61b0fd",
   "lastOpenFiles": [
-    "5. Sistemi Dinamici Differenziali.md",
+    "4.  Sistemi Dinamici Discreti.md",
+    "1. Sistemi 1D.md",
     "6. Sistemi Planari.md",
     "7. Dinamica caotica.md",
+    "5. Sistemi Dinamici Differenziali.md",
     "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
     "Teoremi Importanti.md",
-    "4.  Sistemi Dinamici Discreti.md",
     "3. Sistemi Dinamici Lineari.md",
-    "1. Sistemi 1D.md",
     "2. Trattazione Matematica (si può saltare).md",
     "[1. Sistemi 1D.md",
     "0. Introduzione - Analisi Qualitativa.md",
