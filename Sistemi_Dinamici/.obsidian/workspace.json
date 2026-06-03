@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6. Sistemi Planari.md",
+                "file": "5. Sistemi Dinamici Differenziali.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6. Sistemi Planari"
+              "title": "5. Sistemi Dinamici Differenziali"
             }
           },
           {
@@ -27,16 +27,42 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoremi Importanti.md",
+                "file": "4.  Sistemi Dinamici Discreti.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Teoremi Importanti"
+              "title": "4.  Sistemi Dinamici Discreti"
+            }
+          },
+          {
+            "id": "5e46a1054d4a0c41",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Images/Pasted image 20260505152520.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260505152520"
+            }
+          },
+          {
+            "id": "e9d446f04f0ea0cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. Trattazione Matematica (si può saltare).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2. Trattazione Matematica (si può saltare)"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -211,18 +237,28 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ce8990e5ef61b0fd",
+  "active": "e9d446f04f0ea0cf",
   "lastOpenFiles": [
-    "4.  Sistemi Dinamici Discreti.md",
     "1. Sistemi 1D.md",
-    "6. Sistemi Planari.md",
-    "7. Dinamica caotica.md",
-    "5. Sistemi Dinamici Differenziali.md",
+    "Images/Pasted image 20260505155536.png",
+    "Images/Pasted image 20260505152520.png",
     "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
-    "Teoremi Importanti.md",
+    "Images/Pasted image 20260226152800.png",
+    "Images/Pasted image 20260225145948.png",
+    "Images/Pasted image 20260225144128.png",
+    "Images/Pasted image 20260225140722.png",
+    "Images/Pasted image 20260224194747.png",
+    "Images/Pasted image 20260224191729.png",
+    "Images/Pasted image 20260224190621.png",
+    "Images/Pasted image 20260224190354.png",
+    "5. Sistemi Dinamici Differenziali.md",
+    "4.  Sistemi Dinamici Discreti.md",
+    "6. Sistemi Planari.md",
     "3. Sistemi Dinamici Lineari.md",
+    "Teoremi Importanti.md",
     "2. Trattazione Matematica (si può saltare).md",
     "[1. Sistemi 1D.md",
+    "7. Dinamica caotica.md",
     "0. Introduzione - Analisi Qualitativa.md",
     "Appunti Prof/6. Sistemi Dinamici Discreti.pdf",
     "Appunti Prof/7. Sistemi Dinamici e Caos.pdf",
@@ -233,23 +269,13 @@
     "Excalidraw/7. Sistemi Planari 2026-05-05 16.32.43.excalidraw.md",
     "Excalidraw/7. Sistemi Planari 2026-05-05 16.30.34.excalidraw.md",
     "Excalidraw/7. Sistemi Planari 2026-05-05 16.24.08.excalidraw.md",
-    "Pasted image 20260505155536.png",
-    "Pasted image 20260505152520.png",
     "Excalidraw/7. Sistemi Planari 2026-05-05 14.31.05.excalidraw.md",
-    "Images/Pasted image 20260421164347.png",
     "Excalidraw/Drawing 2026-04-23 14.43.31.excalidraw.md",
     "Excalidraw/6. Sistemi Dinamici Differenziali 2026-04-23 15.05.28.excalidraw.md",
     "Excalidraw/Drawing 2026-04-02 15.34.22.excalidraw.md",
     "Sistemi Dinamici Discreti (brutta coppia).md",
     "Sistemi Dinamici Lineari.md",
-    "Pasted image 20260421164347.png",
-    "Images/Pasted image 20260421144634.png",
-    "Images/Pasted image 20260421151031.png",
-    "Images/Pasted image 20260421150637.png",
     "Giorno Dedicato alla Pace.md",
-    "Images/Pasted image 20260413124129.png",
-    "Images/Pasted image 20260413124147.png",
-    "Pasted image 20260413124059.png",
     "Appunti Prof/Sistemi Dinamici Lineari_1.pdf",
     "Excalidraw",
     "Untitled",
@@ -257,7 +283,6 @@
     "1. Momenti.md",
     "2. Distribuzioni di Probabilità.md",
     "Brutta Copia/2. Distribuzioni di Probabilità.md",
-    "Brutta Copia/1. Momenti.md",
-    "Python Syntax.md"
+    "Brutta Copia/1. Momenti.md"
   ]
 }

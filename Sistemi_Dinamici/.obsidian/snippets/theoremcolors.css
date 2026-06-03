@@ -127,3 +127,20 @@
     font-weight: bold !important;
     font-style: italic;
 }
+
+/* 8. INTUITION - Soft Indigo */
+.callout[data-callout="intuition"], 
+.callout[data-callout="int"] {
+    --callout-color: 99, 102, 241; /* Indigo */
+    --callout-icon: compass; /* Oppure 'eye' o 'zap' */
+    background-color: rgba(99, 102, 241, 0.05);
+    border-left: 5px solid rgb(99, 102, 241);
+}
+
+/* Label for Intuition */
+.callout[data-callout="intuition"] .callout-title-inner::before,
+.callout[data-callout="int"] .callout-title-inner::before {
+    content: "Intuition " attr(data-callout-metadata) ": " !important;
+    font-weight: bold !important;
+    font-style: italic;
+}
