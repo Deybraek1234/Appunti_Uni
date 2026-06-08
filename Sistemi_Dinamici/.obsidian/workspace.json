@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. Sistemi Dinamici Differenziali.md",
+                "file": "3. Sistemi Dinamici Lineari.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5. Sistemi Dinamici Differenziali"
+              "title": "3. Sistemi Dinamici Lineari"
             }
           },
           {
@@ -53,12 +53,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. Sistemi Dinamici Differenziali.md",
+                "file": "6. Sistemi Planari.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5. Sistemi Dinamici Differenziali"
+              "title": "6. Sistemi Planari"
             }
           }
         ],
@@ -239,10 +239,15 @@
   },
   "active": "e9d446f04f0ea0cf",
   "lastOpenFiles": [
-    "4.  Sistemi Dinamici Discreti.md",
     "5. Sistemi Dinamici Differenziali.md",
+    "4.  Sistemi Dinamici Discreti.md",
+    "3. Sistemi Dinamici Lineari.md",
+    "Teoremi Importanti.md",
+    "6. Sistemi Planari.md",
+    "7. Dinamica caotica.md",
     "2. Trattazione Matematica (si può saltare).md",
     "1. Sistemi 1D.md",
+    "0. Introduzione - Analisi Qualitativa.md",
     "Images/Pasted image 20260505155536.png",
     "Images/Pasted image 20260505152520.png",
     "S. H. Strogatz - Nonlinear dynamics and chaos.pdf",
@@ -254,12 +259,7 @@
     "Images/Pasted image 20260224191729.png",
     "Images/Pasted image 20260224190621.png",
     "Images/Pasted image 20260224190354.png",
-    "6. Sistemi Planari.md",
-    "3. Sistemi Dinamici Lineari.md",
-    "Teoremi Importanti.md",
     "[1. Sistemi 1D.md",
-    "7. Dinamica caotica.md",
-    "0. Introduzione - Analisi Qualitativa.md",
     "Appunti Prof/6. Sistemi Dinamici Discreti.pdf",
     "Appunti Prof/7. Sistemi Dinamici e Caos.pdf",
     "Appunti Prof/4. Sistemi Dinamici Non Lineari.pdf",
