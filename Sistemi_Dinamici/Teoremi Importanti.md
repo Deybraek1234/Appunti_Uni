@@ -9,4 +9,4 @@
 * Varietà Invarianti - Teorema varietà invariante locale [[5. Sistemi Dinamici Differenziali#Varietà invarianti]]
 * Indice di Poincaré [[6. Sistemi Planari#Indice di Poincaré]]
 * Teorema Poincaré-Bendixson [[6. Sistemi Planari#Teorema di Pioncaré-Bendixson]]*
-* (Opzionale probabilmente) Attrattori strani [[6. Sistemi Planari#Attrattori Strani]]
+* (Opzionale probabilmente) Attrattori strani [[7. Dinamica caotica#Attrattori Strani]]
