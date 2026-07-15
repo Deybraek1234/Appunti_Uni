@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Momenti.md",
+                "file": "7. Metodo Minimi Quadrati.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. Momenti"
+              "title": "7. Metodo Minimi Quadrati"
             }
           }
         ],
@@ -187,6 +187,11 @@
   },
   "active": "8d32f698e36a0a33",
   "lastOpenFiles": [
+    "6. Metodo Massima Verosimiglianza.md",
+    "5. Stima dei Parametri.md",
+    "4. Variabili in più dimensioni.md",
+    "Altre Distribuzioni.md",
+    "3. Legge Dei Grandi Numeri_ Distribuzione Esponenziale.md",
     "2. Distribuzione Binomiale_Poisson_Gauss_Cauchy.md",
     "1. Momenti.md",
     "8. Test di Ipotesi.md",
@@ -199,14 +204,9 @@
     "8..md",
     "Libri di Testo",
     "(guarda appunti prof) Metodo dei Minimi Quadrati.md",
-    "6. Metodo Massima Verosimiglianza.md",
-    "5. Stima dei Parametri.md",
     "Esercitazione 3.md",
-    "3. Legge Dei Grandi Numeri_ Distribuzione Esponenziale.md",
-    "4. Variabili in più dimensioni.md",
     "Excalidraw/Drawing 2026-03-26 11.52.57.excalidraw.md",
     "Immagini/Pasted image 20260326165738.png",
-    "Altre Distribuzioni.md",
     "Excalidraw/Drawing 2026-03-26 11.31.12.excalidraw.md",
     "Excalidraw",
     "Note Organizzative.md",

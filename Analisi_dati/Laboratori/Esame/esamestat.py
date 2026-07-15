@@ -10,13 +10,13 @@ def Main():
         return np.exp(-x/tau)/tau
     
     def ln_likelihood(x, data):
-        return -len(data) * np.log(x) - (np.sum(data)/tau)
+        return -len(data) * np.log(x) - (np.sum(data)/x)
 
     data = np.loadtxt("conteggi_geiger_terraEtna_notte.txt")/1000
     
-    # Istoramma di Partenza
+    # Istogramma di Partenza
     counts, bounds, _ = axs[0].hist(data, bins = 60, range=(0,20), edgecolor = 'k', label="Dati Misurati")
-    axs[0].set(xlabel="Tempo Atteso", ylabel="Counts", title="Istogramma dei Dati Misurati")
+    axs[0].set(xlabel="Tempo Atteso (S)", ylabel="Eventi Rilevati", title="Istogramma dei Dati Misurati")
     # Errori per Istogramma 
     centers = (bounds[:-1] + bounds[1:])/2
     axs[0].errorbar(centers, counts, yerr=np.sqrt(counts), capsize=2, elinewidth=1, color='red', fmt='none', label="Errore")
@@ -24,31 +24,35 @@ def Main():
     # calcolo tau_hat e varianza + strd dev
     tau_hat = np.sum(data)/float(len(data))
     std_dev_tau_hat = np.sqrt(tau_hat**2 / float(len(data)))
-    print(f"{tau_hat:.4f} \u00B1 {std_dev_tau_hat:.4f}")
+    print(f"Tau calcolo diretto dai dati: {tau_hat:.3f} \u00B1 {std_dev_tau_hat:.3f}")
 
     # Sovrapporre curva teorica
     axs[0].plot(bounds, distrib_esponenziale(bounds, tau_hat)*(bounds[1]-bounds[0]) * len(data), label="Curva Attesa")
 
+    #--------------------------------------------------------
     # Test Pearson
+    #--------------------------------------------------------
     expected_centers = distrib_esponenziale(centers, tau_hat) * (bounds[1] - bounds[0]) * len(data)
     mask_pearson = counts >= 5
     chi2_pearson = np.sum((counts[mask_pearson] - expected_centers[mask_pearson])**2/expected_centers[mask_pearson])
     # P-value
     m = len(counts[mask_pearson])
-    ndf = m - 2
+    ndf = m - 1
     p_value = chi2.sf(chi2_pearson, ndf)
     if p_value > 0.05:
-        print(f"Non possiamo rigettare l'ipotesi: p-value {p_value:.3f} > {0.05}")
+        print(f"Non possiamo rigettare l'ipotesi nulla: p-value={p_value:.3f}>{0.05}\n")
     if p_value < 0.05:
-        print(f"Possiamo rigettare l'ipotesi: p-value {p_value:.3f} < {0.05}")
-
+        print(f"Possiamo rigettare l'ipotesi nulla: p-value={p_value:.3f}<{0.05}\n")
+    
+    #--------------------------------------------------------
     # Maximum Likelihood
-    tau = np.linspace(tau_hat - 3*std_dev_tau_hat, tau_hat + 3*std_dev_tau_hat, 10000)
+    #--------------------------------------------------------
+    tau = np.linspace(tau_hat - 3*std_dev_tau_hat, tau_hat + 3*std_dev_tau_hat, 500000)
     ln_tau = ln_likelihood(tau, data)
     
     # Trovare l'indice che massimizza ln_tau, estrai prendi tau_max(x), e ln_tau_max(y)
     tau_max_index = np.argmax(ln_tau)
-    tau_max = tau[tau_max_index]
+    tau_g= tau[tau_max_index]
     ln_tau_max = ln_tau[tau_max_index]
     
     # Definire threshold e si cercano tutti i punti sopra, prendiamo primo e ultimo indici dell'elemento che sono i primi punti dove siamo leggermente sopra
@@ -61,13 +65,16 @@ def Main():
 
     # plot dei valori
     axs[1].plot(tau, ln_tau)
-    axs[1].axhline(ln_tau_max, c='orange', linewidth=1, label=f"Tau_max: {tau_max:.3f}")
+    axs[1].axhline(ln_tau_max, c='orange', linewidth=1, label=f"Tau_max: {tau_g:.3f}")
     axs[1].axhline(ln_tau_max - 0.5, c='#CA4D1F', label=f"Lmax-0.5: {ln_tau_max - 0.5:.3f}")
     axs[1].axvline(tau_1, c='#42D73D', label=f"Tau1,2: {tau_1:.3f}; {tau_2:.3f}")
     axs[1].axvline(tau_2, c='#42D73D')
-    axs[1].set(xlabel="x", ylabel="ln_likelihood(x)", title="Grafico del Likelihood dei dati")
-    
+    axs[1].set(xlabel=r"$\tau$", ylabel=r"$\ln \mathcal{L}(\tau)$", title="Grafico del Likelihood dei dati")
+    print(f"Valore di tau usando ML grafico:{tau_g:.3f} \u00B1 {(tau_2-tau_1)/2:.3f}\n")
+
+    #--------------------------------------------------------
     # Monte-Carlo
+    #--------------------------------------------------------
     def funz_ripartizione(x):
         return -tau_hat*np.log(1-x)
     def gauss_func(x, mu, sigma):
@@ -88,31 +95,38 @@ def Main():
     # Calcolo media/deviazione strd sui dati generati + plot
     tau_MC = np.sum(medie_tau_hat)/len(medie_tau_hat)
     std_dev_MC = np.std(medie_tau_hat)
-    print(f"Valore generato dalla simulazione Monte Carlo: {tau_MC:.3f} \u00B1 {std_dev_MC:.3f}")
+    print(f"Valore generato dalla simulazione Monte Carlo: {tau_MC:.3f} \u00B1 {std_dev_MC:.4f}\n")
     axs[2].plot(centers, gauss_func(centers, tau_MC, std_dev_MC) * bin_width * 5000, label="Curva Attesa")
     axs[2].set(xlabel = "Media Dati Generati", ylabel="Frequenza", title="Simulazione Monte-Carlo")
 
+    #z-test per vedere se i risultati sono compatibili, si deve solo fare tra tau e tau_MC perché tau_g è la stessa stima di tau_hat
+    z = np.abs(tau_hat - tau_MC)/np.sqrt(std_dev_tau_hat**2 + std_dev_MC**2)
+    if z < 3:
+        print(f"Essendo z={z:.4f}<3 le misure sono compatibili")
+    else:
+        print(f"Essendo z={z:.4f}>3 le misure non sono compatibili")
+
+    #--------------------------------------------------------
     # Trasformazione Inversa
+    #--------------------------------------------------------
     u = 1 - np.exp(-data/tau_hat)
     counts, bounds, _ = axs[3].hist(u, bins = 60, range=(0,1), edgecolor='k', label="Dati Trasformati (u)")
     centers = (bounds[:-1] + bounds[1:])/2
     bin_width = bounds[1] - bounds[0]
     curva_attesa = len(data) * bin_width
     axs[3].axhline(curva_attesa, color='orange',linestyle='-', linewidth=2, label=f"Curva Attesa: y = {curva_attesa:.3f}")
-
+    axs[3].set(xlabel =r"u = 1-exp(-t/$\hat{\tau}$)", ylabel="Eventi Rilevati", title = "Istogramma della trasformazione inversa")
     # Chi2 Pearson
     ni_i = np.full_like(counts, curva_attesa)
     mask_pearson = counts >= 5
     chi2_pearson = np.sum((counts[mask_pearson] - ni_i[mask_pearson])**2/ni_i[mask_pearson])
     m = len(ni_i[mask_pearson])
-    ndf = m - 2
+    ndf = m - 1
     p_value = chi2.sf(chi2_pearson, ndf)
-    print(f"P-Value: {p_value}")
-
     if p_value < 0.05:
-        print("Possiamo rigettare l'ipotesi nulla")
+        print(f"Possiamo rigettare l'ipotesi nulla: i dati non sono compatibili: {p_value:.3f} < 0.05")
     if p_value >= 0.05:
-        print("Non possiamo rigettare l'ipotesi nulla")
+        print(f"Non possiamo rigettare l'ipotesi nulla: i dati sono compatibili: {p_value:.3f} > 0.05")
 
     axs[0].legend()
     axs[1].legend()
@@ -120,8 +134,6 @@ def Main():
     axs[3].legend()
     plot.show()
 
-
-
-
+ 
 if __name__ == "__main__":
     Main()
