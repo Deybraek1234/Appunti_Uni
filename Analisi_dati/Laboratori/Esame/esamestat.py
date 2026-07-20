@@ -36,7 +36,7 @@ def Main():
     expected_centers = distrib_esponenziale(centers, tau_hat) * (bounds[1] - bounds[0]) * len(data)
     mask_pearson = counts >= 5
     chi2_pearson = np.sum((counts[mask_pearson] - expected_centers[mask_pearson])**2/expected_centers[mask_pearson])
-    # P-value
+    # P-valu
     m = len(counts[mask_pearson])
     ndf = m - 1
     p_value = chi2.sf(chi2_pearson, ndf)
