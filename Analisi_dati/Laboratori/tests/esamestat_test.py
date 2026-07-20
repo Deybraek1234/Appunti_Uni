@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plot
 from scipy.stats import chi2
+from matplotlib.widgets import Button
 
 fig, a = plot.subplots(nrows=2, ncols=2)
 axs = a.flatten()
@@ -36,20 +37,15 @@ def Main():
     expected_centers = distrib_esponenziale(centers, tau_hat) * (bounds[1] - bounds[0]) * len(data)
     mask_pearson = counts >= 5
     chi2_pearson = np.sum((counts[mask_pearson] - expected_centers[mask_pearson])**2/expected_centers[mask_pearson])
+    print(chi2_pearson)
     # P-value
     m = len(counts[mask_pearson])
     ndf = m - 1
     p_value = chi2.sf(chi2_pearson, ndf)
     if p_value > 0.05:
-        print(f"Non possiamo rigettare l'ipotesi nulla: p-value={p_value:.3f}>{0.05}")
+        print(f"Non possiamo rigettare l'ipotesi nulla: p-value={p_value:.3f}>{0.05}\n")
     if p_value < 0.05:
-        print(f"Possiamo rigettare l'ipotesi nulla: p-value={p_value:.3f}<{0.05}")
-    
-    chi2_soglia = chi2.isf(0.05, ndf)
-    if chi2_pearson > chi2_soglia:
-        print(f"Chi2 misurato > chi2_soglia: {chi2_pearson:.4f} > {chi2_soglia:.4f}, rigettiamo l'ipotesi nulla.\n")
-    if chi2_pearson < chi2_soglia:
-        print(f"Chi2 misurato < chi2_soglia: {chi2_pearson:.4f} < {chi2_soglia:.4f}, non possiamo rigettare l'ipotesi nulla.\n")
+        print(f"Possiamo rigettare l'ipotesi nulla: p-value={p_value:.3f}<{0.05}\n")
     
     #--------------------------------------------------------
     # Maximum Likelihood
@@ -73,7 +69,6 @@ def Main():
     # plot dei valori
     axs[1].plot(tau, ln_tau)
     axs[1].axhline(ln_tau_max, c='orange', linewidth=1, label=f"Tau_max: {tau_g:.3f}")
-    axs[1].axvline(tau_g, c='orange', linewidth=1)
     axs[1].axhline(ln_tau_max - 0.5, c='#CA4D1F', label=f"Lmax-0.5: {ln_tau_max - 0.5:.3f}")
     axs[1].axvline(tau_1, c='#42D73D', label=f"Tau1,2: {tau_1:.3f}; {tau_2:.3f}")
     axs[1].axvline(tau_2, c='#42D73D')
@@ -89,37 +84,53 @@ def Main():
         return 1/(np.sqrt((2*np.pi))*sigma) * np.exp(-(x-mu)**2/(2*sigma**2))
 
     # Avvia la simulazione
-    medie_tau_hat = []
-    for i in range(5000):
-        data_esponenziale = funz_ripartizione(np.random.uniform(0,1,size=len(data)))
-        medie_tau_hat.append(np.sum(data_esponenziale)/len(data_esponenziale))
+    def MonteCarlo(event):
+        medie_tau_hat = []
+
+        axs[2].clear()
+        for i in range(5000):
+            data_esponenziale = funz_ripartizione(np.random.uniform(0,1,size=len(data)))
+            medie_tau_hat.append(np.sum(data_esponenziale)/len(data_esponenziale))
+        
+        # Istogramma
+        counts, bounds, _ = axs[2].hist(medie_tau_hat, bins=int(np.sqrt(5000)), edgecolor='k', label="Dati Misurati")
+        centers = (bounds[:-1] + bounds[1:])/2
+        bin_width = bounds[1] - bounds[0]
+        axs[2].errorbar(centers, counts, yerr=np.sqrt(counts), fmt='none', elinewidth=1, color='red', capsize=2, label="Errore")
+
+        # Calcolo media/deviazione strd sui dati generati + plot
+        tau_MC = np.sum(medie_tau_hat)/len(medie_tau_hat)
+        std_dev_MC = np.std(medie_tau_hat)
+        print(f"Valore generato dalla simulazione Monte Carlo: {tau_MC:.3f} \u00B1 {std_dev_MC:.4f}")
+        axs[2].plot(centers, gauss_func(centers, tau_MC, std_dev_MC) * bin_width * 5000, label="Curva Attesa")
+        axs[2].set(xlabel = "Media Dati Generati", ylabel="Frequenza", title="Simulazione Monte-Carlo")
+
+        #z-test per vedere se i risultati sono compatibili, si deve solo fare tra tau e tau_MC perché tau_g è la stessa stima di tau_hat
+        z = np.abs(tau_hat - tau_MC)/np.sqrt(std_dev_tau_hat**2 + std_dev_MC**2)
+        if z < 3:
+            print(f"Essendo z={z:.4f}<3 le misure sono compatibili \n")
+        else:
+            print(f"Essendo z={z:.4f}>3 le misure non sono compatibili \n")
+
+        axs[2].legend()
+        fig.canvas.draw_idle()
+
+    plot.subplots_adjust(bottom=0.2)
+    ax_button = plot.axes([0.4, 0.05, 0.2, 0.075])
+    fig.btn = Button(ax_button, "Simulazione Monte Carlo")
+    fig.btn.on_clicked(MonteCarlo)
     
-    # Istogramma
-    counts, bounds, _ = axs[2].hist(medie_tau_hat, bins=int(np.sqrt(5000)), edgecolor='k', label="Dati Misurati")
-    centers = (bounds[:-1] + bounds[1:])/2
-    bin_width = bounds[1] - bounds[0]
-    axs[2].errorbar(centers, counts, yerr=np.sqrt(counts), fmt='none', elinewidth=1, color='red', capsize=2, label="Errore")
-
-    # Calcolo media/deviazione strd sui dati generati + plot
-    tau_MC = np.sum(medie_tau_hat)/len(medie_tau_hat)
-    std_dev_MC = np.std(medie_tau_hat, ddof=1)
-    print(f"Valore generato dalla simulazione Monte Carlo: {tau_MC:.3f} \u00B1 {std_dev_MC:.4f}\n")
-    axs[2].plot(centers, gauss_func(centers, tau_MC, std_dev_MC) * bin_width * 5000, label="Curva Attesa")
-    axs[2].set(xlabel = "Media Dati Generati", ylabel="Frequenza", title="Simulazione Monte-Carlo")
-
-    print(f"Incertezza sigma_tau_hat:{std_dev_tau_hat:.5f}; sigma_MC:{std_dev_MC:.4f}")
 
     #--------------------------------------------------------
     # Trasformazione Inversa
     #--------------------------------------------------------
-    u = 1-np.exp(-data/tau_hat)
-    counts, bounds, _ = axs[3].hist(u,bins=60, range=(0,1), edgecolor='k', label="Dati Trasformati(u)")
+    u = 1 - np.exp(-data/tau_hat)
+    counts, bounds, _ = axs[3].hist(u, bins = 60, range=(0,1), edgecolor='k', label="Dati Trasformati (u)")
     centers = (bounds[:-1] + bounds[1:])/2
     bin_width = bounds[1] - bounds[0]
     curva_attesa = len(data) * bin_width
     axs[3].axhline(curva_attesa, color='orange',linestyle='-', linewidth=2, label=f"Curva Attesa: y = {curva_attesa:.3f}")
     axs[3].set(xlabel =r"u = 1-exp(-t/$\hat{\tau}$)", ylabel="Eventi Rilevati", title = "Istogramma della trasformazione inversa")
-    axs[3].errorbar(centers, counts, yerr=np.sqrt(counts), fmt='none', elinewidth=1, color='red', capsize=2, label="Errore")
     # Chi2 Pearson
     ni_i = np.full_like(counts, curva_attesa)
     mask_pearson = counts >= 5
@@ -127,13 +138,13 @@ def Main():
     m = len(ni_i[mask_pearson])
     ndf = m - 1
     p_value = chi2.sf(chi2_pearson, ndf)
-    if p_value <= 0.05:
+    if p_value < 0.05:
         print(f"Possiamo rigettare l'ipotesi nulla: i dati generati dalla trasformazione inversa non sono compatibili: {p_value:.3f} < 0.05")
-    if p_value > 0.05:
+    if p_value >= 0.05:
         print(f"Non possiamo rigettare l'ipotesi nulla: i dati generati dalla trasformazione inversa sono compatibili: {p_value:.3f} > 0.05")
 
-    for ax in axs:
-        ax.legend()
+    for index in range(3):
+        axs[index].legend()
     
     plot.show()
 
