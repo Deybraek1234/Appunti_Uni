@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plot
 from scipy.stats import chi2
+import matplotlib
+matplotlib.use("TkAgg")
 
 fig, a = plot.subplots(nrows=2, ncols=2)
 axs = a.flatten()
@@ -16,7 +18,7 @@ def Main():
     # -------------------------------------------------------
     # Istogramma di Partenza
     # -------------------------------------------------------
-    counts, bounds, _ = axs[0].hist(data, bins = 60, range=(0,20), edgecolor = 'k', label="Dati Misurati")
+    counts, bounds, _ = axs[0].hist(data, bins=int(np.sqrt(len(data))),range=(0,30), edgecolor = 'k', label="Dati Misurati")
     axs[0].set(xlabel="Tempo Atteso (S)", ylabel="Eventi Rilevati", title="Istogramma dei Dati Misurati")
     # Errori per Istogramma 
     centers = (bounds[:-1] + bounds[1:])/2
@@ -36,7 +38,7 @@ def Main():
     expected_centers = distrib_esponenziale(centers, tau_hat) * (bounds[1] - bounds[0]) * len(data)
     mask_pearson = counts >= 5
     chi2_pearson = np.sum((counts[mask_pearson] - expected_centers[mask_pearson])**2/expected_centers[mask_pearson])
-    # P-valu
+    # P-value
     m = len(counts[mask_pearson])
     ndf = m - 1
     p_value = chi2.sf(chi2_pearson, ndf)
@@ -113,7 +115,7 @@ def Main():
     # Trasformazione Inversa
     #--------------------------------------------------------
     u = 1-np.exp(-data/tau_hat)
-    counts, bounds, _ = axs[3].hist(u,bins=60, range=(0,1), edgecolor='k', label="Dati Trasformati(u)")
+    counts, bounds, _ = axs[3].hist(u, bins=int(np.sqrt(len(medie_tau_hat))), range=(0,1), edgecolor='k', label="Dati Trasformati(u)")
     centers = (bounds[:-1] + bounds[1:])/2
     bin_width = bounds[1] - bounds[0]
     curva_attesa = len(data) * bin_width
