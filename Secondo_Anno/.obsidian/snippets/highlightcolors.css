@@ -1,0 +1,125 @@
+/* ==========================================================
+   Obsidian Electrodynamics Callouts (Theme Override)
+   ========================================================== */
+
+/* 1. DEFINITION: Electric Cyan */
+.callout[data-callout="definition"] {
+  --callout-color: 6, 182, 212 !important;
+  --callout-icon: "lucide-atom" !important;
+  border-left-color: rgb(6, 182, 212) !important;
+  background-color: rgba(6, 182, 212, 0.1) !important;
+}
+.callout[data-callout="definition"] .callout-title,
+.callout[data-callout="definition"] .callout-icon {
+  color: rgb(6, 182, 212) !important;
+}
+
+/* 2. THEOREM: Warm Amber */
+.callout[data-callout="theorem"] {
+  --callout-color: 245, 158, 11 !important;
+  --callout-icon: "lucide-zap" !important;
+  border-left-color: rgb(245, 158, 11) !important;
+  background-color: rgba(245, 158, 11, 0.1) !important;
+}
+.callout[data-callout="theorem"] .callout-title,
+.callout[data-callout="theorem"] .callout-icon {
+  color: rgb(245, 158, 11) !important;
+}
+
+/* 3. PROOF: Emerald Green */
+.callout[data-callout="proof"] {
+  --callout-color: 16, 185, 129 !important;
+  --callout-icon: "lucide-shield-check" !important;
+  border-left-color: rgb(16, 185, 129) !important;
+  background-color: rgba(16, 185, 129, 0.1) !important;
+}
+.callout[data-callout="proof"] .callout-title,
+.callout[data-callout="proof"] .callout-icon {
+  color: rgb(16, 185, 129) !important;
+}
+.callout[data-callout="proof"] > .callout-content {
+  font-style: italic;
+}
+
+/* 4. DERIVATION: Violet */
+.callout[data-callout="derivation"] {
+  --callout-color: 139, 92, 246 !important;
+  --callout-icon: "lucide-sigma" !important;
+  border-left-color: rgb(139, 92, 246) !important;
+  background-color: rgba(139, 92, 246, 0.1) !important;
+}
+.callout[data-callout="derivation"] .callout-title,
+.callout[data-callout="derivation"] .callout-icon {
+  color: rgb(139, 92, 246) !important;
+}
+
+/* 5. EXAMPLE: Coral / Hot Pink */
+.callout[data-callout="example"] {
+  --callout-color: 244, 63, 94 !important;
+  --callout-icon: "lucide-lightbulb" !important;
+  border-left-color: rgb(244, 63, 94) !important;
+  background-color: rgba(244, 63, 94, 0.1) !important;
+}
+.callout[data-callout="example"] .callout-title,
+.callout[data-callout="example"] .callout-icon {
+  color: rgb(244, 63, 94) !important;
+}
+
+/* 6. SUMMARY: Royal Indigo / Blue */
+.callout[data-callout="summary"] {
+  --callout-color: 79, 70, 229 !important;
+  --callout-icon: "lucide-bookmark-check" !important;
+  border-left-color: rgb(79, 70, 229) !important;
+  background-color: rgba(79, 70, 229, 0.1) !important;
+}
+.callout[data-callout="summary"] .callout-title,
+.callout[data-callout="summary"] .callout-icon {
+  color: rgb(79, 70, 229) !important;
+}
+
+/* 7. RECALL: */
+.callout[data-callout="reminder"] {
+    --callout-color: 220, 20, 60 !important;
+    --callout-icon: eye;
+    border-left-color: rgb(220, 20, 60) !important;
+    background-color: rgba(220, 20, 60, 0.1) !important;
+}
+
+.callout[data-callout="reminder"] .callout-title,
+.callout[data-callout="reminder"] .callout-icon {
+    color: rgb(220, 20, 60) !important;
+}
+
+/* 8. FORMULA */ 
+.callout[data-callout="formula"] {
+  --callout-color: 217, 70, 239 !important;
+  --callout-icon: "lucide-function-square" !important;
+  border-left-color: rgb(217, 70, 239) !important;
+  background-color: rgba(217, 70, 239, 0.1) !important;
+}
+.callout[data-callout="formula"] .callout-title,
+.callout[data-callout="formula"] .callout-icon {
+  color: rgb(217, 70, 239) !important;
+
+
+/* ==========================================================
+   Shared Dimensions & Borders
+   ========================================================== */
+.callout[data-callout="definition"],
+.callout[data-callout="theorem"],
+.callout[data-callout="proof"],
+.callout[data-callout="derivation"],
+.callout[data-callout="example"],
+.callout[data-callout="formula"],
+.callout[data-callout="summary"] {
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  border-radius: 6px !important;
+  margin: 1.2em 0 !important;
+}
+
+/* Math block adjustments inside callouts */
+.callout .math-block {
+  padding: 0.3em 0 !important;
+  overflow-x: auto !important;
+}
